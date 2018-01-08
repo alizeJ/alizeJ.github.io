@@ -123,13 +123,17 @@
 
 
 
-<meta property="og:type" content="website">
+<meta name="description" content="�Ķ�Ŀ¼  һ �����ݿ���������� �� �����ݿ���������� �� ��mysql���� �� �����ذ�װ �� ��mysql����������� �� ����ʶsql���  һ �����ݿ���������������������֮ǰ��ѧ������Ҫ�����ñ��棬���Ǳ������ļ��У��������ʣ�һ���ļ�����ֻ�ܴ��">
+<meta property="og:type" content="article">
 <meta property="og:title" content="SHEN">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/01/08/初识数据库/index.html">
 <meta property="og:site_name" content="SHEN">
+<meta property="og:description" content="�Ķ�Ŀ¼  һ �����ݿ���������� �� �����ݿ���������� �� ��mysql���� �� �����ذ�װ �� ��mysql����������� �� ����ʶsql���  һ �����ݿ���������������������֮ǰ��ѧ������Ҫ�����ñ��棬���Ǳ������ļ��У��������ʣ�һ���ļ�����ֻ�ܴ��">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-01-08T12:04:16.990Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SHEN">
+<meta name="twitter:description" content="�Ķ�Ŀ¼  һ �����ݿ���������� �� �����ݿ���������� �� ��mysql���� �� �����ذ�װ �� ��mysql����������� �� ����ʶsql���  һ �����ݿ���������������������֮ǰ��ѧ������Ҫ�����ñ��棬���Ǳ������ļ��У��������ʣ�һ���ļ�����ֻ�ܴ��">
 
 
 
@@ -159,13 +163,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/01/08/初识数据库/"/>
 
 
 
 
 
-  <title>SHEN</title>
+  <title> | SHEN</title>
   
 
 
@@ -192,8 +196,7 @@
   
   
 
-  <div class="container  
-  page-home">
+  <div class="container  page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -276,9 +279,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -308,9 +311,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/08/初识数据库/" itemprop="url">未命名</a></h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -370,9 +371,7 @@
       
 
       
-        
-          
-            <p><strong>�Ķ�Ŀ¼</strong></p>
+        <p><strong>�Ķ�Ŀ¼</strong></p>
 <ul>
 <li>һ �����ݿ����������</li>
 <li>�� �����ݿ����������</li>
@@ -430,8 +429,6 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">#1. �޸������ļ�</span><br><span class="line">[mysqld]</span><br><span class="line">default-character-set=utf8 </span><br><span class="line">[client]</span><br><span class="line">default-character-set=utf8 </span><br><span class="line">[mysql]</span><br><span class="line">default-character-set=utf8</span><br><span class="line"></span><br><span class="line">#mysql5.5���ϣ��޸ķ�ʽ�����Ķ�</span><br><span class="line">[mysqld]</span><br><span class="line">character-set-server=utf8</span><br><span class="line">collation-server=utf8_general_ci</span><br><span class="line">[client]</span><br><span class="line">default-character-set=utf8</span><br><span class="line">[mysql]</span><br><span class="line">default-character-set=utf8</span><br><span class="line"></span><br><span class="line">#2. �������</span><br><span class="line">#3. �鿴�޸Ľ����</span><br><span class="line">\s</span><br><span class="line">show variables like &apos;%char%&apos;</span><br></pre></td></tr></table></figure>
 <p>#������ʶsql���<br>����mysql������ݿ�������Ϳ��Խ�����Ա�Ӷ����ݵĹ����н��ѳ�����רע�ڶԳ����߼��ı�д<br>mysql����������mysqld�����ǹ�����ļ����Լ��ļ���ǰ������Ϊʹ���ߵ����ǣ���Ҫ����mysql�Ŀͻ��ˣ���������ģ�������ӵ�mysqld��Ȼ��ʹ��mysql����涨���﷨��ʽȥ�ύ�Լ����ʵ�ֶ��ļ��л��ļ��Ĺ������﷨��sql��Structured Query Language ���ṹ����ѯ���ԣ�<br>SQL������Ҫ���ڴ�ȡ���ݡ���ѯ���ݡ��������ݺ͹����ϵ���ݿ�ϵͳ,SQL������IBM������SQL���Է�Ϊ3�����ͣ�<br><em>1��DDL���    ���ݿⶨ�����ԣ� ���ݿ⡢����ͼ���������洢���̣�����CREATE DROP ALTER</em><br><em>2��DML���    ���ݿ�������ԣ� ��������INSERT��ɾ������DELETE����������UPDATE����ѯ����SELECT</em><br><em>3��DCL���    ���ݿ�������ԣ� ��������û��ķ���Ȩ��GRANT��REVOKE</em></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">#1. �����ļ���</span><br><span class="line">        ����create database db1 charset utf8;</span><br><span class="line">        �飺show databases;</span><br><span class="line">        �ģ�alter database db1 charset latin1;</span><br><span class="line">        ɾ��: drop database db1;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#2. �����ļ�</span><br><span class="line">    ���л����ļ����£�use db1</span><br><span class="line">        ����create table t1(id int,name char);</span><br><span class="line">        �飺show tables</span><br><span class="line">        �ģ�alter table t1 modify name char(3);</span><br><span class="line">              alter table t1 change name name1 char(2);</span><br><span class="line">        ɾ��drop table t1;</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">#3. �����ļ��е�����/��¼</span><br><span class="line">        ����insert into t1 values(1,&apos;egon1&apos;),(2,&apos;egon2&apos;),(3,&apos;egon3&apos;);</span><br><span class="line">        �飺select * from t1;</span><br><span class="line">        �ģ�update t1 set name=&apos;sb&apos; where id=2;</span><br><span class="line">        ɾ��delete from t1 where id=1;</span><br><span class="line"></span><br><span class="line">        ��ձ�</span><br><span class="line">            delete from t1; #���������id�����������ݣ���Ȼ����ɾ��ǰ�����һ����Ϊ��ʼ��</span><br><span class="line">            truncate table t1;��������ɾ���ٶȱ���һ���죬��ֱ�Ӵ��㿪ʼ��</span><br><span class="line"></span><br><span class="line">            auto_increment ��ʾ������</span><br><span class="line">            primary key ��ʾ��Լ���������ظ��Ҳ���Ϊ�գ������ٲ���</span><br></pre></td></tr></table></figure>
-          
-        
       
     </div>
     
@@ -448,141 +445,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/05/article-title/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="alizeJ">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/head.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SHEN">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/05/article-title/" itemprop="url">article title</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-05T10:39:00+08:00">
-                2018-01-05
-              </time>
+              <a href="/2018/01/05/article-title/" rel="next" title="article title">
+                <i class="fa fa-chevron-left"></i> article title
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/01/05/article-title/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/01/05/article-title/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -592,148 +476,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/05/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="alizeJ">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/head.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SHEN">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/05/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-05T09:54:44+08:00">
-                2018-01-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/01/05/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/01/05/hello-world/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -741,6 +488,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -761,8 +515,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -824,6 +587,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#һ-�����ݿ�������������"><span class="nav-number">1.</span> <span class="nav-text">һ �����ݿ�������������</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#����mysql����"><span class="nav-number">2.</span> <span class="nav-text">����mysql����</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#�g����ذ�װ"><span class="nav-number">3.</span> <span class="nav-text">�ġ����ذ�װ</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -977,6 +756,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
